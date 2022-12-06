@@ -25,7 +25,7 @@ module.exports = function (context) {
     var deferral = require('q').defer();
 
     console.log('Installing "' + PLUGIN_ID + '" dependencies');
-    child_process.exec('npm install @sspencer10/cordova-plugin-openwith@1.0.0', {cwd:__dirname}, function (error) {
+    child_process.exec('npm install @sspencer10/cordova-plugin-openwith --no-audit', {cwd:__dirname}, function (error) {
         if (error !== null) {
             console.log('exec error: ' + error);
             deferral.reject('npm installation failed');
