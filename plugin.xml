@@ -34,8 +34,8 @@ SOFTWARE.
   <engines>
     <engine name="cordova" version=">=6.0.0" />
   </engines>
-  <repo>https://github.com/missive/cordova-plugin-openwith.git</repo>
-  <issue>https://github.com/missive/cordova-plugin-openwith/issues</issue>
+  <repo>https://github.com/sspencer10/cordova-plugin-openwith.git</repo>
+  <issue>https://github.com/sspencer10/cordova-plugin-openwith/issues</issue>
   <license>MIT</license>
   <keywords>cordova,phonegap,openwith,ios,android</keywords>
 
@@ -123,13 +123,13 @@ SOFTWARE.
     <!-- Cordova >= 3.0.0 -->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="OpenWithPlugin">
-        <param name="android-package" value="com.missiveapp.openwith.OpenWithPlugin"/>
+        <param name="android-package" value="com.sspencer10.openwith.OpenWithPlugin"/>
       </feature>
     </config-file>
 
     <!-- cordova plugin src files -->
-    <source-file src="src/android/com/missiveapp/openwith/OpenWithPlugin.java" target-dir="src/com/missiveapp/openwith" />
-    <source-file src="src/android/com/missiveapp/openwith/PluginResultSender.java" target-dir="src/com/missiveapp/openwith" />
-    <source-file src="src/android/com/missiveapp/openwith/Serializer.java" target-dir="src/com/missiveapp/openwith" />
+    <source-file src="src/android/com/sspencer10/openwith/OpenWithPlugin.java" target-dir="src/com/sspencer10/openwith" />
+    <source-file src="src/android/com/sspencer10/openwith/PluginResultSender.java" target-dir="src/com/sspencer10/openwith" />
+    <source-file src="src/android/com/sspencer10/openwith/Serializer.java" target-dir="src/com/sspencer10/openwith" />
   </platform>
 </plugin>
